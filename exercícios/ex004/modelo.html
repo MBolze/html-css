@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPM DAUD</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="flagicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1><img src="https://www.saude.sc.gov.br/images/stories/website/santa-catarina-logo-.png" alt="flag" width="70" height="70" style="float:left">Relatório de Indicadores</h1>
+    </header>
+    <section>
+            <div>
+                <p>Escolha abaixo o indicador a ser incluído:</p>
+                <select name="indicadores" id="sellista" size="10" style="width: 500px;">
+                    <option value="AA1">Agendamento de videoconferência, reunião, visita, vistoria, contato com unidades envolvidas (por dia)
+                    </option>
+                    <option value="AA2">Análise do Plano Anual de Atividades de Auditoria ou Relatório Anual de Atividades de Auditoria
+                    </option>
+                    <option value="AA3">Análise do resultado mensal das atividades desenvolvidas ou Relatório do resultado mensal das atividades desenvolvidas
+                    </option>
+                    <option value="AA4">Análise e instrução de demandas externas e internas, ouvidorias, pareceres, e-mail, dúvidas
+                    </option>
+                    <option value="AA5">Consulta técnica, Instrução, análise de documentos, SGPe
+                    </option>
+                </select>
+            <input type="button" value="Incluir Indicador" onclick="incluirIndicador()"></p>
+            </div>
+            <div>Horas executadas no indicador selecionado: <input type="number" name="horas" id="horas"></div>
+            <div id="res">
+                <br>
+                <strong>Indicadores inseridos:</strong>
+            </div>
+    </section>
+    <footer>
+        <p>&copy; Diretoria de Auditoria (DAUD) - SES/SC</p>
+        <p></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
